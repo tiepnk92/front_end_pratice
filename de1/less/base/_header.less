@@ -1,0 +1,99 @@
+.header{
+    &-inner{      
+            .top-menu-inner{
+            display: flex;
+            justify-content: space-between;
+            height: 45px;
+            background-color: @bg-color;
+            align-items: center;
+            }
+            .top-menu-left{
+                display: flex;
+                color: @title-color;
+                padding-left: 30px;
+                .top-menu-left-title{
+                    padding-left: 8px;
+                }
+            }
+            .top-menu-right{
+                color: @title-color;
+                display: flex;
+                .top-menu-right-setting{
+                    display: flex;
+                    .top-menu-right-icon{
+                       button{
+                           background-color: @bg-color;
+                           color: @title-color;
+                       } 
+                    }
+                    .top-menu-right-title{
+                        padding-left: 8px;
+                    }
+                }
+                .top-menu-right-login{
+                    display: flex;
+                    margin-left: 32px;
+                    margin-right: 28px;
+                    .top-menu-right-title{
+                        margin-left: 8px;
+                    }
+                    button{
+                        background-color: @bg-color;
+                        color: @title-color;
+                    } 
+                }
+            }             
+        
+    
+        .main-menu{
+            .main-menu-inner{
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+                background-color: #ffffff;
+                border-style: none none solid none;
+                border-width: 1px;
+                border-bottom-color: #dddddd;
+                height: 80px;
+                .search-box{
+                    display: none;
+                }
+                
+                .logo{
+                    margin-left: 30px;
+                    margin-top: 20px;
+                }
+            .nav-icon{
+                display: none;
+            }
+            nav{
+                .nav-bar{
+                    
+                    font-size: 14px;
+                    font-weight: 600;
+                    .nav-item{
+                        margin-left: 28px;
+                        margin-right: 29px;
+                        display: inline-block;
+                    }
+                }
+            }
+            .cart{
+                display: flex;
+                margin-right: 30px;
+                .cart-icon-like{
+                    margin-right: 30px;
+                    button{
+                        font-size: 30px;
+                    }
+                }
+                .cart-icon-cart{
+                    button{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        }
+    }
+}
