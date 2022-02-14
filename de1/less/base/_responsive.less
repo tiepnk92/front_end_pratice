@@ -1,14 +1,189 @@
-@media all and (max-width: 1920px) {
-    
-}
 
-@media all and (max-width: 1170px) {
-.footer{
-    &-main{
+@media (max-width: 1280px) {
+  .wrapper{
+    .header{
         &-inner{
-            margin-left: 100px;
-            width: 50%;
+            .main-menu{
+                &-inner{
+                    align-content: center;
+                    .logo{
+                        margin: auto;
+                    }
+                    nav {
+                        .nav-bar{
+                            display: none;
+                        }
+                        }
+                    .nav-icon{
+                        display: block;
+                        margin-left: 10px;
+                        font-size: 30px;
+                        font-weight: 500;
+                        line-height: 30px;
+                    }
+                    }
+                }
+        }
+    }
+.main-content{
+    .adv{
+        .container{
+            .adv-inner{
+                max-width: 1140px;
+                width: 100%;
+                margin: auto;
+                box-sizing: border-box;
+              /*   display: grid;
+                grid-template-columns: repeat(1,1fr); */
+                .adv-item-left{
+                    img{
+                        width: 100%;
+                        max-width: 750px;
+                        height: auto;
+                    }
+                }
+                .adv-item-right{
+                    margin-top: 30px;
+                }
+            }
         }
     }
 }
+}
+}
+@media all and (max-width: 900px){
+
+    .footer{
+        .footer-main{
+            .footer-main-inner{
+                display: grid;
+                grid-template-rows: repeat(1, 2fr);
+            }
+        }
+    }
+}
+@media all and (max-width: 1140px)
+{
+    .main-content{
+
+        .product{
+            .container{
+                .product-main{
+                    .product-main-inner{
+                     display: grid;
+                       grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+            }
+        }
+        .news-events{
+            .container{
+                .news-events-inner{
+                    .news-events-slider{
+                      /*   display: flex;
+                       flex-direction: column; */
+                       display: grid;
+                       grid-template-columns: repeat(1, 1fr);
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 430px)
+{
+    .footer{
+        .footer-main{
+            .footer-main-inner{
+                .navigation{
+                    .navigation-line{
+                        width: 30%;
+                    }
+                    .navigation-content{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+.header{
+    &-inner{
+        .top-menu{
+            &-inner{
+                .top-menu-left{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.main-content{
+
+    .product{
+        .container{
+            .product-main{
+                .product-main-inner{
+                 display: grid;
+                   grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}
+}
+ @media all and (max-width: 750px)
+{
+    .wrapper{
+    .main-content{
+        .adv{
+            .container{
+                .adv-inner{
+                    width: 100%; 
+                    height: 100%;
+                    margin: auto;
+                    box-sizing: border-box;
+                    display: grid;
+                    grid-template-columns: repeat(1,1fr);
+                    .adv-item-left{
+                        img{
+                            width: 100%;
+                           /*  max-width: 750px;
+                            height: auto; */
+                        }
+                    }
+                    .adv-item-right{
+                       .adv-item-right-top{
+                           img{
+                               width: 100%;
+                               max-width: 360px;
+                               height: auto;
+                           }
+                       }
+                       .adv-item-right-bot{
+                        img{
+                            width: 100%;
+                            max-width: 360px;
+                            height: auto;
+                        }
+                    }
+                    } 
+                }
+            }
+        }
+    }
+}
+} 
+@media all and (max-width: 300px)
+{
+    .header{
+        &-inner{
+            .main-menu{
+                &-inner{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
 }

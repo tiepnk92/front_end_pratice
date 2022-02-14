@@ -1,0 +1,263 @@
+.page-main{
+    .main-top{
+        .container{
+            display: flex;
+            align-items: center;
+            padding-top: 15px;
+
+            .main-top-item{
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                width: 25%;
+                height: 133px;
+                &-icon{
+                    img{
+                        vertical-align: middle;
+                    }
+                }
+                &-content{
+                    padding-left: 22px;   
+                    .title{
+                        font-size: 16px;
+                        font-family: 'Poppins', sans-serif;
+                    } 
+                    .details{
+                        font-size: 14px;
+                        color: #8f8f8f;
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        .container{
+            display: grid;
+            grid-template-columns: 653px 457px;
+            grid-gap: 30px;
+            .banner-left{
+                position: relative;
+                .banner-inner{
+                    .banner-left-detail{
+                       margin-top: -190px;
+                       text-align: center;
+                       .banner-countdown{
+                            display: grid;
+                            grid-template-columns: 60px 60px 60px 60px;
+                            grid-gap: 10px;
+                            margin-left: 192px;
+                            margin-bottom: 30px;
+                        .days{
+                            background-color: #ffffff;
+                            width: 60px;
+                            height: 62px;
+                            font-size: 12px;
+                            font-family: 'Poppins', sans-serif;
+                            text-transform: uppercase;
+                                span{
+                                    color: #0ca8c9;
+                                    font-size: 21px;
+                                    font-family: 'Poppins',sans-serif;
+                                }
+                        }
+                        .hours{
+                            background-color: #ffffff;
+                            width: 60px;
+                            height: 62px;
+                            font-size: 12px;
+                            font-family: 'Poppins', sans-serif;
+                            text-transform: uppercase;
+                            span{
+                                color: #0ca8c9;
+                                font-size: 21px;
+                                font-family: 'Poppins',sans-serif;
+                            }
+                        }
+                        .mins{
+                            background-color: #ffffff;
+                            width: 60px;
+                            height: 62px;
+                            font-size: 12px;
+                            font-family: 'Poppins', sans-serif;
+                            text-transform: uppercase;
+                            span{
+                                color: #0ca8c9;
+                                font-size: 21px;
+                                font-family: 'Poppins',sans-serif;
+                            }
+                        }
+                        .secs{
+                            background-color: #ffffff;
+                            width: 60px;
+                            height: 62px;
+                            font-size: 12px;
+                            font-family: 'Poppins', sans-serif;
+                            text-transform: uppercase;
+                            span{
+                                color: #0ca8c9;
+                                font-size: 21px;
+                                font-family: 'Poppins',sans-serif;
+                            }
+                            }
+                       }    
+                    }
+                    .banner-left-content{
+                        .title{
+                            font-size: 30px;
+                            font-family: 'Poppins-SemiBold',sans-serif;
+                            color: #000000;
+                        }
+                        .summary{
+                            color: #8f8f8f;
+                            font-size: 18px;
+                            font-family: 'Poppins-Regular',sans-serif;
+                            span{
+                                color: #0ca8c9;
+                            }
+                        }
+                    }
+                }
+            }
+            .banner-right{
+                .banner-col{
+                    display: grid;
+                    grid-template-rows: 240px 240px;
+                    grid-gap: 30px;
+                    .banner-right-item{
+                        position: relative;
+                        &-inner{
+                            .banner-right-content-top{
+                                position: absolute;
+                                top:25%;
+                                padding-left: 30px;
+                                .sale-number{
+                                    span{
+                                        font-size: 60px;
+                                        font-family: 'Poppins-SemiBold', sans-serif;
+                                        color: #0ca8c9;
+                                        font-weight: 500;
+                                    }
+                                }
+                                .title-special{
+                                    font-size: 24px;
+                                    font-family: 'Poppins-Medium', sans-serif;
+                                    font-weight: 400;        
+                                    color: #000000;          
+                                    text-transform: uppercase;                  
+                                }
+                                .summary{
+                                    font-size: 18px;
+                                    font-family: 'Poppins-Regular', sans-serif;
+                                    color: #8f8f8f;
+                                }
+
+                            }
+                            .banner-right-content-bot{
+                                position: absolute;
+                                top: 50%;
+                                padding-left: 30px;
+                                .title{
+                                    text-transform: uppercase;
+                                    font-size: 30px;
+                                    color: #000000;
+                                    font-family: 'Poppins-SemiBold',sans-serif;
+                                }
+                                .summary{
+                                    font-size: 18px;
+                                    color: #8f8f8f;
+                                    font-family: 'Poppins-Regular',sans-serif;
+                                    span{
+                                        color: #0ca8c9;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product{
+        &-inner{
+            .product-top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-top: 75px;
+                .product-title{
+                    text-transform: uppercase;
+                    font-family: 'Poppins-SemiBold',sans-serif;
+                    font-size: 42px;
+                }
+                .product-icon{
+                    margin-right: 0px;
+                    font-size: 32px;
+                    display: flex; 
+                    align-items: center;
+                    .next{
+                        padding-left: 20px;
+                        cursor: pointer;
+                    }
+                    .previous{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .product-main{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                box-sizing: border-box;
+                .product-item:hover .buy-now {
+                    transform: translate(0);
+                }
+                .product-item{
+                    margin-top: 65px;
+                    position: relative;
+                    overflow: hidden;
+                    img{
+                        max-width: 100%;
+                        height: auto;
+                    }
+                    
+                    .buy-now{
+                       transform: translate(100%);
+                        a{
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        background-color: #0ca8c9;
+                        color: #ffffff;
+                        text-align: center;
+                        display: block;
+                        padding: 15px 0;
+                        position: absolute;
+                        bottom: 0px;
+                        width: 100%;
+                        transition: 0.25s ease-in-out ;
+                        }
+                    
+                    }
+                    .product-content{
+                        text-align: center;
+                        width: 190px;
+                        height: 65px;
+                        margin-left: 36.5px;
+                        margin-top: 20px;
+                        .product-name{
+                        font-size: 16px;
+                        font-family: 'Poppins-SemiBold', sans-serif;
+                        font-weight: 600;
+                        }
+                        .product-price{
+                        font-size: 13px;
+                        font-family: 'Poppins-SemiBold', sans-serif;
+                        color: #0ca8c9;
+                        font-weight: 600;
+                        margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

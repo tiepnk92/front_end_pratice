@@ -1,5 +1,5 @@
 .header{
-    &-inner{      
+    &-inner{     
             .top-menu-inner{
             display: flex;
             justify-content: space-between;
@@ -46,6 +46,7 @@
         
     
         .main-menu{
+            
             .main-menu-inner{
                 justify-content: space-between;
                 display: flex;
@@ -55,18 +56,77 @@
                 border-width: 1px;
                 border-bottom-color: #dddddd;
                 height: 80px;
+
                 .search-box{
                     display: none;
                 }
                 
                 .logo{
                     margin-left: 30px;
-                    margin-top: 20px;
                 }
             .nav-icon{
                 display: none;
+                cursor: pointer;
             }
-            nav{
+            .checkbtn{
+                display: none;
+            }
+            .checkbtn:checked ~ .nav-overlay{
+                display: block;
+
+            }
+            .checkbtn:checked ~ .moblie{
+                transform: translateX(0);
+                transition: .5s ease-out;
+            }
+            .nav-overlay{
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(0, 0, 0, 0.3);
+                display: none;
+            }
+            .moblie{
+                position: fixed;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    width: 320px;
+                    max-width: 100%;
+                    background-color: #ffffff;
+                    transform: translateX(-320px);
+                    transition: .5s ease-in;
+                .mobile-close{
+                    font-size: 30px;
+                    color: #666;
+                    position: absolute;
+                    top: 1re;
+                    right: 1rem;
+                    cursor: pointer;
+
+                }
+
+                .nav-bar-mobile{
+    
+                    .nav-item-mobile{
+                        display: block;
+                        padding: 20px 0;
+                        margin-left: 10px;
+                        font-size: 15px;
+                        font-weight: 600;
+                        border-color: black;
+                        border-style: none none solid none;
+                        border-width: 1px;
+                    }
+                    .nav-item-mobile a:hover{
+                        background-color: #666;
+                    }
+
+                }
+            }
+            .pc{
                 .nav-bar{
                     
                     font-size: 14px;

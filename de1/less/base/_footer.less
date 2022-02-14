@@ -1,14 +1,16 @@
 .footer{
     background-color: @footer-bg-color;
-    height: 417px;
-
+    max-height: 100%;
+    max-width: 100%;
     &-main{
         &-inner{
-            display: grid;
-            grid-template-columns: 260px 360px 260px;
-            grid-gap: 133px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 1140px;
+            width: 100%;
+            margin: auto;
+            box-sizing: border-box;
             .about-franco{
-                margin-left: 390px;
                 width: 263px;
                 height: 347px;
                 &-line{
@@ -25,7 +27,7 @@
                     font-family: @font-title;
                 }
                 &-content{
-                    color: @text-color ;
+                    color: #888888 ;
                     font-size: 14px;
                     padding-top: 30px;
                     font-family: @font-product-price;
@@ -39,10 +41,10 @@
             }
             .navigation{
                 width: 360px;
-                 margin-left: 390px;
+                /*  margin-left: 390px; */
                  &-title{
                     font-size: 16px;
-                    color: @footer-title;
+                    color: #f7f7f7;
                     padding-top: 63px;
                     font-family: @font-title;
                  }
@@ -50,7 +52,8 @@
                     color: @text-color ;
                     font-size: 14px;
                     padding-top: 30px;
-                    display: flex;
+                    display: flex; 
+                    justify-content: space-between;
                     .navigation-left
                     {
                         li a{
@@ -58,7 +61,7 @@
                             width: 100px;
                             height: 20px;
                             text-decoration: none;
-                            color: @text-color;
+                            color: #888888;
                             font-family: @font-title;
                         }
                          a:hover{
@@ -73,8 +76,7 @@
                             width: 165px;
                             height: 20px;
                             text-decoration: none;
-                            margin-left: 95px;
-                            color: @text-color;
+                            color: #888888;
                             font-family: @font-title;
                         }
                         a:hover{
@@ -93,7 +95,7 @@
             }
             .shop-location{
                 width: 260px;
-                margin-left: 390px;
+              /*   margin-left: 390px; */
                 &-title{
                     font-size: 16px;
                     color: #f7f7f7;
@@ -111,7 +113,7 @@
                 &-content{
                     padding-top: 30px;
                     line-height: 25px;
-                    color: @text-color;
+                    color: #888888;
                     .address-item{
                         display: flex;
                         justify-content: space-between;
@@ -153,22 +155,23 @@
         }
     }
     &-bot{
+        max-width: 1142px;
+        width: 100%;
+        margin: auto;
         height: 70px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-style: solid none solid none;
+        border-style: solid none none none;
+        border-top-color: #393939;
         border-width: 1px;
-        border-top-color:@footer-border-line;
-        border-bottom-color: #1e1e1e;
-        border-bottom-width:2px ;
         &-left{
             color:  @text-color;
             font-family: @font-title;
-            margin-left: 390px;
+           /*  margin-left: 390px; */
         }
         &-right{
-            margin-right: 390px;
+            /* margin-right: 390px; */
             color: @text-color;
             a{
                 color: @text-color;
